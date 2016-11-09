@@ -55,7 +55,22 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {
+    background-color: #a5d2ff;
+}
+.main {
+    background: #ffffff;
+    padding: 20px;
+    width:  80%;
+    margin: 0 10;
+    margin-top: 30px;
+}
+.our-jquery {
+    background: #42566b;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
 
 

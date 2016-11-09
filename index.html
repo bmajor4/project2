@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Daily Survey</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,8 +16,124 @@
         <![endif]-->
     </head>
     <body>
+        <section class="online-survey">
+            
+            <p class="notify"></p
+            
+            <h1>Your Day Survey</h1>
+            
+            <p>* denotes a required field</p>
+            
+            <form name="surveyForm" action="php/survey" onsubmit="return vaildation()" method="post">
+            
+            <p>
+                <label for="firstName">First Name*:</label>
+                <input type="text" name="firstname" id="firstName">
+            </p>
+            
+             <p>
+                <label for="lastName">Last Name*:</label>
+                <input type="text" name="lastname" id="lastName">
+            </p>
+            
+            <p>
+                <label for="1.whatIsTheMostImportantPartOfGettingYourDayStarted?">1. What is the most important part of getting your day started?</label>
+                <select name="1.whatisthemostimportantpartofgettingyourdaystarted?">
+                    
+                    <option value="Choose one">Choose one</option>
+                    
+                    <option value="I need to have a filling breakfast.">I need to have a filling breakfast.</option>
+                    
+                    <option value="I just get up and go.">I just get up and go.</option>
+                    
+                    <option value="I need a morining cup of coffee or two.">I need a morining cup of coffee or two.</option>
+                    
+                    <option value="Every part of my morining is important.">Every part of my morning is important.</option>
+                    
+                    <option value="I am not a morning person, so I do not care.">I am not a morning person, so I dont care.</option>
+                    
+                </select>
+                
+                <br>
+                <hr>
+                <br>
+                
+                <label for="2.howManyTimesDoYouEatInADay?">2. How many times do you eat in day?</label>
+                
+                <select name="2.howmanytimesdoyoueatinaday?">
+                    
+                    <option value="Choose one">Choose one</option>
+                    
+                    <option value="I only eat breakfast, lunch, and dinner.">I onlly eat breakfast, lunch, and dinner.</option>
+                    
+                    <option value="I eat as many times as I can.">I eat as many times as I can.</option>
+                    
+                    <option value="I am more of a snacker, I do not eat large meals.">I am more of a snacker, I do not eat large meals.</option>
+                    <option value= "I am not a breakfast person, only do lunch and dinner.">I am not a breakfast person, I only do lunch and dinner.</option>
+                    <option value="I only eat when I get hungry.">I only eat when I get hungry.</option>
+                    </select>
+                    
+                    <br>
+                    <hr>
+                    <br>
+                    
+                    <label for="3.howManyTimesADayDoYouShower?">3. How many times a day do you shower?</label>
+                
+                <select name="3.howmanytimesadaydoyoushower?">
+                    
+                    <option value="Choose one">Choose one</option>
+                    
+                    <option value="Maybe once.">Maybe once.</option>
+                    
+                    <option value="I have to shower at least two times.">I have to shower at least two times.</option>
+                    
+                    <option value="Every other day.">Every other day.</option>
+                    <option value= "I like to take baths.">I like to take baths.</option>
+                    <option value="What the hell is that?">What the hell is that?</option>
+                    
+                </select>
+                
+                <br>
+                <hr>
+                <br>
+                
+                <label for="4.howManyTimesDoYouBrushYourTeeth?">4. How many times do you brush your teeth?</label>
+                
+                <select name="4.howmanytimesdoyoubrushyourteeth?">
+                    <option value="Choose one">Choose one</option>
+                    
+                    <option value="Again, what the hell is that?">Again, what the hell is that?</option>
+                    
+                    <option value="Gotta have them to brush them.">Gotta have them to brush them.</option>
+                    <option value= "After every meal.">After every meal.</option>
+                    <option value="Once, after I wake up.">Once, after I wake up.</option>
+                    <option value="I don't. I just chew gum.">I don't, I just chew gum.</option>
+                    </select>
+                    
+                        <br>
+                        <hr>
+                <br>
+                
+                <label for="5.whatTimeDoYouGoToSleep?">5. What time do you go to sleep?</label>
+                
+                <select name="5.whattimedoyougotosleep?">
+                    <option value="Choose one">Choose one</option>
+                    
+                    <option value="If I could, I would sleep the day away.">If I could, I would sleep the day away.</option>
+                    
+                    <option value="No later than 9 p.m.">No later than 9 p.m.</option>
+                    <option value= "I am a night owl, so who knows.">I am a night owl, so who knows.</option>
+                    <option value="Once I get the kids to bed, I am done.">Once I get the kids to bed, I am done.</option>
+                    <option value="I love naps.">I love naps.</option>
+                    </select>
+            </p>
+            <br>
+            <br>
+            <input type = "submit" value="Submit">
+            </form>
+        </section>
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <script src="js/main.js"></script>
 
     </body>
 </html>
